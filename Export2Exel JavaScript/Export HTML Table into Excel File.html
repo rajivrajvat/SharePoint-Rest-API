@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Export to HTML Table to Excel</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        tr:nth-child(even) {
+            background-color: aliceblue;
+        }
+        th{
+            background-color: #5a5a5a;
+            color: white;
+        }
+    </style>
+    <script src="table2excel.js"></script>
+</head>
+<body>
+    <button id="downloadexcel">Export to Excel</button>
+    <br><br>
+    <table id="example-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start Date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rajiv Kumar</td>
+                <td>SharePoint Developer</td>
+                <td>New Delhi</td>
+                <td>29</td>
+                <td>29 Aug 2018</td>
+                <td>$45,000</td>
+            </tr>
+            <tr>
+                <td>Sanyojika Singh</td>
+                <td>SharePoint Developer</td>
+                <td>Greater Noida</td>
+                <td>28</td>
+                <td>19 Aug 2019</td>
+                <td>$55,000</td>
+            </tr>
+            <tr>
+                <td>Ravi Shukla</td>
+                <td>PowerApps Developer</td>
+                <td>Mumbai</td>
+                <td>30</td>
+                <td>29 Sep 2018</td>
+                <td>$35,000</td>
+            </tr>
+            <tr>
+                <td>Rajiv Kumar</td>
+                <td>SharePoint Developer</td>
+                <td>New Delhi</td>
+                <td>29</td>
+                <td>29 Aug 2018</td>
+                <td>$45,000</td>
+            </tr>
+            <tr>
+                <td>Sanyojika Singh</td>
+                <td>SharePoint Developer</td>
+                <td>Greater Noida</td>
+                <td>28</td>
+                <td>19 Aug 2019</td>
+                <td>$55,000</td>
+            </tr>
+            <tr>
+                <td>Ravi Shukla</td>
+                <td>PowerApps Developer</td>
+                <td>Mumbai</td>
+                <td>30</td>
+                <td>29 Sep 2018</td>
+                <td>$35,000</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        document.getElementById('downloadexcel').addEventListener('click', function() {
+            var table2excel = new Table2Excel();
+            table2excel.export(document.querySelectorAll("#example-table"));
+        });
+    </script>
+</body>
+</html>
