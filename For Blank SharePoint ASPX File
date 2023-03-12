@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<%@ Page Language="C#" %>
+<%@ Register tagprefix="SharePoint" namespace="Microsoft.SharePoint.WebControls" assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head runat="server">
+<meta name="WebPartPageExpansion" content="full" />
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<title>View User</title>
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<SharePoint:CssRegistration Name="default" runat="server"/>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+
+<!--[if gte mso 9]>
+<SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,_dlc_DocId,_dlc_DocIdUrl,_dlc_DocIdPersistId,HideFromDelve,_ModernAudienceAadObjectIds"><xml>
+	
+	
+	
+	
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">4LISPSOINNTL-215462633-135</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">3cd18df3-8ff4-4d37-9975-1377b8c1dccc</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://0pqwz.sharepoint.com/sites/CTM/_layouts/15/DocIdRedir.aspx?ID=4LISPSOINNTL-215462633-135, 4LISPSOINNTL-215462633-135</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml></SharePoint:CTFieldRefs><![endif]-->
+<head>
+
+</head>
+
+
+<style>
+      
+</style>
+<body>
+
+</body>
+
+</html>
